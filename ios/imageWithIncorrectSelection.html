@@ -136,7 +136,7 @@ figure .iconZoom{
     display: inline-block;
     width: 24px;
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 10px;
     z-index: 20000;
     cursor: pointer;
@@ -316,7 +316,7 @@ margin-left: 1px;
     user-select: none}
 
 .qOptions li.optionWithImg{
-    padding: 0 50px;
+    padding: 20px 50px;
     margin: 10px 0;
     border: 2px solid #8ab752;
     border-radius: 20px;
@@ -355,6 +355,11 @@ margin-left: 1px;
     left: 5px;
     padding: 0;
     margin-top: -15px;
+}
+
+.qOptions li.optionWithImg .selectedOptionBg {
+    position: static;
+    margin: 0;
 }
 
 .qBoxNav {
@@ -639,9 +644,9 @@ Given the sequence: \[3;\; 9;\; 17;\; 27;...\] Choose the INCORRECT statement.
 <span class="qAnsStatus incorrect">
 <i class="fa fa-close"></i>
 </span>
-<input type="radio" name="option" value=".">
+<input type="radio" name="option" value="." class="disabled">
 <a href="#">
-<span class="qOpLabel">C</span>
+<span class="selectedOptionBg">C</span>
 <!-- TODO:: Show on solution screen when answer is incorrect -->
 </a>
 </li>
